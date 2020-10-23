@@ -1,0 +1,3 @@
+[submodule "GithubApiSample"]
+	path = GithubApiSample
+	url = git@github.com:antonkovalyov351/GithubApiSample.git
