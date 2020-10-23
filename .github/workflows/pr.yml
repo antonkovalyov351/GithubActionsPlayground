@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  pull_request:
+    branches: 
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.CI_SSH }}
+          submodules: recursive
+        
